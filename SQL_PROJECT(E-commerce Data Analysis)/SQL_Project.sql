@@ -27,3 +27,24 @@ INNER JOIN orders_dimen od ON od.Ord_id = mf.Ord_id
 INNER JOIN prod_dimen pd ON pd.Prod_id = mf.Prod_id
 INNER JOIN shipping_dimen sd ON sd.Ship_id = mf.Ship_id
 ) A;
+
+
+SELECT * 
+FROM combined_table
+ORDER BY Ord_id
+
+--2. Find the top 3 customers who have the maximum count of orders.
+
+SELECT  TOP 3 Cust_id, Customer_Name, COUNT(DISTINCT Ord_id) AS COUNT_ORDER
+FROM combined_table
+GROUP BY Cust_id, Customer_Name
+ORDER BY 3 DESC
+
+--3. Create a new column at combined_table as DaysTakenForDelivery 
+--that contains the date difference of Order_Date and Ship_Date.
+
+ALTER TABLE combined_table
+ADD DaysTakenForDelivery INT
+
+UPDATE combined_table
+SET DaysTakenForDelivery=DATEDIFF(DAY,Order_Date,Ship_Date)
