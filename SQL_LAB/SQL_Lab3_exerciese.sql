@@ -1,0 +1,2 @@
+-- 1. Find the weekly order number for the city of Baldwin for the last 8 weeks earlier from ‘2016-08-18’, and also the cumulative total.
+-- Desired output: [week, order_count, cuml_order_count]
