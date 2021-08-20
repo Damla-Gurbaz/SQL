@@ -22,3 +22,9 @@ CREATE TABLE Book.Book_Author
 Book_ID INT PRIMARY KEY,
 Author_ID INT NOT NULL
 );
+--create Publisher Table
+CREATE TABLE [Book].[Publisher]
+(
+	[Publisher_ID] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[Publisher_Name] [nvarchar](100) NULL
+	);
