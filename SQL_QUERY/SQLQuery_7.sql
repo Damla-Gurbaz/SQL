@@ -1,5 +1,6 @@
 --ürünlerin stock sayılarını bulunuz
 
+
 SELECT	product_id, SUM(quantity)
 FROM	production.stocks
 GROUP BY product_id
