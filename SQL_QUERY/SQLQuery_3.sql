@@ -1,5 +1,6 @@
 --## SUBQUERY ##--
 
+
 --📌 SELECT, dondurmek istedigimiz anlamina gelir..
   --tek bir satir ve sutun dondurmek zorunda.(bir deger)
 
