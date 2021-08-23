@@ -18,6 +18,8 @@
 
 --satir bazli👇🏻
 
+
+
 SELECT Category, SUM(total_sales_price)
 FROM sales.sales_summary
 GROUP BY 
