@@ -76,7 +76,7 @@ IN (
 
 
 
------- SINGLE ROW SUBQUERIES ------
+------ 📌SINGLE ROW SUBQUERIES📌 ------
 
 --🔍 Bring all the personnels from the store that Kali	Vargas works
 
