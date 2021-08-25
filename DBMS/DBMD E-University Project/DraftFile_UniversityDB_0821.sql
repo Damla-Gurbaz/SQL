@@ -3,7 +3,7 @@
 --DBMD LECTURE
 --UNIVERSITY DATABASE PROJECT 
 
-
+use eUniversity
 
 --CREATE DATABASE
 
@@ -12,6 +12,35 @@
 
 
 --CREATE TABLES 
+
+CREATE TABLE Student
+(
+StudentID INT,
+Firstname VARCHAR(MAX) ,
+Lastname VARCHAR(MAX),
+Register_date DATE,
+Region_ID INT,
+Staff_ID INT,
+PRIMARY KEY (StudentID),
+FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID),
+FOREIGN KEY (Staff_ID) REFERENCES Staff (Staff_ID)
+)
+
+CREATE TABLE Region
+(
+    Region_ID INT PRIMARY KEY IDENTITY NOT NULL,
+    Region_name VARCHAR(MAX)
+)
+
+CREATE TABLE Staff
+(
+    Staff_ID INT PRIMARY KEY IDENTITY NOT NULL,
+    Firstname VARCHAR(MAX),
+    Lastname VARCHAR(MAX),
+    FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID)
+)
+
+
 
 
 --Make sure you add the necessary constraints.
