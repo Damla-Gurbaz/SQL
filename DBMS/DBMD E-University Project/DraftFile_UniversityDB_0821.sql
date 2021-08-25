@@ -28,17 +28,17 @@ FOREIGN KEY (Staff_ID) REFERENCES Staff (Staff_ID)
 
 CREATE TABLE Region
 (
-    Region_ID INT PRIMARY KEY IDENTITY NOT NULL,
-    Region_name VARCHAR(MAX)
-)
+Region_ID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+Region_name VARCHAR(MAX)
+);
 
 CREATE TABLE Staff
 (
-    Staff_ID INT PRIMARY KEY IDENTITY NOT NULL,
-    Firstname VARCHAR(MAX),
-    Lastname VARCHAR(MAX),
-    FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID)
-)
+Staff_ID INT PRIMARY KEY IDENTITY NOT NULL,
+Firstname VARCHAR(MAX),
+Lastname VARCHAR(MAX),
+Region_ID FOREIGN KEY REFERENCES Region (Region_ID)
+);
 
 
 
