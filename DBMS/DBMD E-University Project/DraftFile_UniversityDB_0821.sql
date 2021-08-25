@@ -13,10 +13,37 @@ use eUniversity
 
 --CREATE TABLES 
 
+
+CREATE TABLE Region
+(
+Region_ID INT IDENTITY(1,1), 
+Region_name VARCHAR(MAX),
+PRIMARY KEY (Region_ID)
+);
+
+---
+
+CREATE TABLE Staff
+(
+Staff_ID INT IDENTITY NOT NULL,
+Firstname VARCHAR(MAX),
+Lastname VARCHAR(MAX),
+PRIMARY KEY (Staff_ID)
+);
+
+----
+CREATE TABLE Course
+(
+Course_ID INT IDENTITY(1,1),
+Title VARCHAR(MAX),
+Credit INT
+);
+----
+
 CREATE TABLE Student
 (
 StudentID INT,
-Firstname VARCHAR(MAX) ,
+Firstname VARCHAR(MAX),
 Lastname VARCHAR(MAX),
 Register_date DATE,
 Region_ID INT,
@@ -24,24 +51,17 @@ Staff_ID INT,
 PRIMARY KEY (StudentID),
 FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID),
 FOREIGN KEY (Staff_ID) REFERENCES Staff (Staff_ID)
-)
-
-CREATE TABLE Region
-(
-Region_ID INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
-Region_name VARCHAR(MAX)
-);
-
-CREATE TABLE Staff
-(
-Staff_ID INT PRIMARY KEY IDENTITY NOT NULL,
-Firstname VARCHAR(MAX),
-Lastname VARCHAR(MAX),
-Region_ID FOREIGN KEY REFERENCES Region (Region_ID)
 );
 
 
 
+
+
+SELECT * FROM Region
+
+ALTER TABLE Staff  ADD CONSTRAINT Region FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID)
+ON UPDATE NO ACTION
+ON DELETE NO ACTION
 
 --Make sure you add the necessary constraints.
 --You can define some check constraints while creating the table, but some you must define later with the help of a scalar-valued function you'll write.
