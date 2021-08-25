@@ -31,6 +31,10 @@ Lastname VARCHAR(MAX),
 PRIMARY KEY (Staff_ID)
 );
 
+---
+ALTER TABLE Staff  ADD CONSTRAINT Region FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID)
+
+
 ----
 CREATE TABLE Course
 (
@@ -78,7 +82,7 @@ FOREIGN KEY (Course_ID) REFERENCES Course (Course_ID)
 
 -----
 
-ALTER TABLE Staff  ADD CONSTRAINT Region FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID)
+
 ON UPDATE NO ACTION
 ON DELETE NO ACTION
 
