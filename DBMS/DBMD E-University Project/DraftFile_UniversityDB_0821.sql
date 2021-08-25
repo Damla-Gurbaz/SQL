@@ -36,13 +36,14 @@ CREATE TABLE Course
 (
 Course_ID INT IDENTITY(1,1),
 Title VARCHAR(MAX),
-Credit INT
+Credit INT,
+PRIMARY KEY (Course_ID)
 );
 ----
 
 CREATE TABLE Student
 (
-StudentID INT,
+StudentID INT IDENTITY(1,1) ,
 Firstname VARCHAR(MAX),
 Lastname VARCHAR(MAX),
 Register_date DATE,
@@ -53,11 +54,29 @@ FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID),
 FOREIGN KEY (Staff_ID) REFERENCES Staff (Staff_ID)
 );
 
+----
 
+CREATE TABLE Enrollment
+(
+STUDENTID INT,
+Course_ID INT,
+PRIMARY KEY (StudentID, Course_ID),
+FOREIGN KEY (StudentID) REFERENCES Student (StudentID),
+FOREIGN KEY (Course_ID) REFERENCES Course (Course_ID)
+)
 
+-----
 
+CREATE TABLE StaffCourse
+(
+Staff_ID INT,
+Course_ID INT,
+PRIMARY KEY (Staff_ID, Course_ID),
+FOREIGN KEY (Staff_ID) REFERENCES Staff (Staff_ID),
+FOREIGN KEY (Course_ID) REFERENCES Course (Course_ID)
+)
 
-SELECT * FROM Region
+-----
 
 ALTER TABLE Staff  ADD CONSTRAINT Region FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID)
 ON UPDATE NO ACTION
