@@ -84,8 +84,7 @@ FOREIGN KEY (Course_ID) REFERENCES Course (Course_ID)
 -----
 
 
-ON UPDATE NO ACTION
-ON DELETE NO ACTION
+
 
 --Make sure you add the necessary constraints.
 --You can define some check constraints while creating the table, but some you must define later with the help of a scalar-valued function you'll write.
