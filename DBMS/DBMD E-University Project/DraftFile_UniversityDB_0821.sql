@@ -32,6 +32,7 @@ PRIMARY KEY (Staff_ID)
 );
 
 ---
+
 ALTER TABLE Staff  ADD CONSTRAINT Region FOREIGN KEY (Region_ID) REFERENCES Region (Region_ID)
 
 
