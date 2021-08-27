@@ -47,6 +47,7 @@ Title VARCHAR(MAX),
 Credit INT,
 PRIMARY KEY (Course_ID)
 );
+
 ----
 
 CREATE TABLE Student
