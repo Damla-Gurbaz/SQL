@@ -21,7 +21,9 @@ Region_name VARCHAR(MAX),
 PRIMARY KEY (Region_ID)
 );
 
+
 ---
+
 
 CREATE TABLE Staff
 (
