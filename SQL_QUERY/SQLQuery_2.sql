@@ -40,6 +40,8 @@ WHERE A.manager_id=B.staff_id
 SELECT *
 FROM sales.staffs
 
+
+
 -------------************-------------
 
 
