@@ -7,6 +7,7 @@ SELECT *
 FROM production.brands
 
 
+
 SELECT *
 FROM production.categories
 
