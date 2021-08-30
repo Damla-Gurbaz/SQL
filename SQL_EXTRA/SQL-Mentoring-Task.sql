@@ -15,6 +15,7 @@ ORDER BY list_price DESC
 
 --📍 What are the categories that each brand has 
 
+
 SELECT A.brand_id, B.category_name, COUNT(b.category_id)
 FROM production.products A, production.categories B 
 WHERE A.category_id = B.category_id
