@@ -49,6 +49,8 @@ AND A.brand_id = C.brand_id
 GROUP BY C.brand_name, B.category_name
 ORDER BY C.brand_name
 
+
+
 --📍 Select the annual amount of product produced according to brands
 
 SELECT C.brand_id, SUM(A.quantity)
