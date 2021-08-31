@@ -68,6 +68,7 @@ WHERE	A.category_id = B.category_id AND
 AND		A.category_name = 'Comfort Bicycles'
 
 
+
 Send a message to class-chat-tr
 
 SELECT CU.customer_id,first_name,last_name,O.order_id, 
