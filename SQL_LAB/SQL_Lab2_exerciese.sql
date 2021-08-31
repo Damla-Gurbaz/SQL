@@ -4,7 +4,8 @@
 SELECT	E.Customer_id, first_name, last_name, D.order_id,category_name,
 		
 		
-FROM	production.categories A,
+FROM	produc
+tion.categories A,
 		production.products B,
 		sales.order_items C,
 		sales.orders D,
