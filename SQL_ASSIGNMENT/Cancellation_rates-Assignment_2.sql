@@ -49,6 +49,8 @@ GO
 
 --##########################--
 
+
+
 WITH T1 AS
 (
     SELECT User_id, COUNT([Action]) as start_number
