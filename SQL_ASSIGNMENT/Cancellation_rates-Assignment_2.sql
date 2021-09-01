@@ -10,7 +10,10 @@ CREATE TABLE [dbo].[Asignment2]
     [date] DATE 
   
 );
+
 GO
+
+
 
 --##########################--
 
