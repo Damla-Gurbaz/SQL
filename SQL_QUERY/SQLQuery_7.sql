@@ -13,6 +13,7 @@ FROM	production.stocks
 SELECT	DISTINCT product_id, SUM(quantity) OVER (PARTITION BY product_id)
 FROM	production.stocks
 
+
 -- Markalara göre ortalama bisiklet fiyatlarını hem Group By hem de Window Functions ile hesaplayınız.
 
 SELECT	brand_id, AVG(list_price) avg_price
@@ -20,7 +21,7 @@ FROM	production.products
 GROUP BY brand_id
 SELECT	DISTINCT brand_id, AVG(list_price) OVER (PARTITION BY brand_id) avg_price
 FROM	production.products
-
+ 
 
 
 -- 1. ANALYTIC AGGREGATE FUNCTIONS --
