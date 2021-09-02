@@ -164,7 +164,9 @@ ORDER BY	category_id, product_id
 SELECT	FIRST_VALUE(product_name) OVER ( ORDER BY list_price)
 FROM	production.products
 
+
 --ürünün yanına list price' ını nasıl eklersiniz?
+
 
 SELECT	 DISTINCT FIRST_VALUE(product_name) OVER ( ORDER BY list_price) , min (list_price) over ()
 FROM	production.products
