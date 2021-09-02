@@ -111,6 +111,7 @@ SELECT	*,
 		LEAD(order_date, 2) OVER (PARTITION BY staff_id ORDER BY Order_date, order_id) prev_ord_date
 FROM	sales.orders
 
+
 --🔍 Window Frame --
 
 SELECT category_id, product_id,
