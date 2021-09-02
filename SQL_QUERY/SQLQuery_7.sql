@@ -182,6 +182,7 @@ select distinct category_id, LAST_VALUE(product_name) over (partition by categor
 from production.products
 
 --1. Tüm bisikletler arasında en ucuz bisikletin adı (LAST_VALUE fonksiyonunu kullanınız)
+
 SELECT	DISTINCT
 		FIRST_VALUE(product_name) OVER ( ORDER BY list_price),
 		LAST_VALUE(product_name) OVER (	ORDER BY list_price desc ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
