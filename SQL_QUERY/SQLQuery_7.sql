@@ -68,6 +68,7 @@ ORDER BY category_id
 
 
 --📌5. Herbir kategorideki herbir markada kaç farklı bisikletin bulunduğu
+
 SELECT	DISTINCT 
 		category_id, brand_id,
 		COUNT(product_id) OVER(PARTITION BY category_id, brand_id) num_of_bike_by_cat_brand
