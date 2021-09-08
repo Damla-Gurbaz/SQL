@@ -221,7 +221,7 @@ WHERE
     first_name NOT LIKE 'A%'
 ORDER BY
     first_name;
-    
+
 
 --SQL Server LIKE with ESCAPE example--
 
@@ -248,6 +248,7 @@ FROM
 ORDER BY
     product_name DESC;
 
+
 --🔍 More SQL Server Left join examples
 
 SELECT
@@ -263,6 +264,7 @@ FROM
 		ON o.order_id = i.order_id
 ORDER BY
     order_id;
+
 
 --🔍 query finds the products that belong to the order id 100
 
