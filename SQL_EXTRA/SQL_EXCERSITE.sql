@@ -296,6 +296,7 @@ ORDER BY
 
 --SELF JOIN
 
+
 SELECT
     c1.city,
 	c1.first_name + ' ' + c1.last_name customer_1,
