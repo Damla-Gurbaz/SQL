@@ -221,6 +221,7 @@ WHERE
     first_name NOT LIKE 'A%'
 ORDER BY
     first_name;
+    
 
 --SQL Server LIKE with ESCAPE example--
 
