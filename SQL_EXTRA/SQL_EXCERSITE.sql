@@ -310,6 +310,7 @@ ORDER BY
     customer_1,
     customer_2;
 
+
 --query returns the number of customers by state and city
 
 SELECT
