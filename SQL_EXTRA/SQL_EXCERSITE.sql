@@ -175,6 +175,7 @@ ORDER BY
 --The second letter u matches the letter u exactly
 --The third character % matches any sequence of characters
 
+
 SELECT
     customer_id,
     first_name,
