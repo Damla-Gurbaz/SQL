@@ -185,7 +185,9 @@ WHERE
     last_name LIKE '[YZ]%'
 ORDER BY
     last_name;
+
 ----
+
 SELECT
     customer_id,
     first_name,
