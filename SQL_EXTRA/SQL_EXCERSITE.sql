@@ -7,6 +7,7 @@ GROUP BY city
 HAVING COUNT(*)>10
 ORDER BY city
 
+
 --
 
 SELECT city, COUNT(customer_id)
