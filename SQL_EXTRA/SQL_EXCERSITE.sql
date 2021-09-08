@@ -123,7 +123,11 @@ FROM sales.customers
 WHERE phone IS NOT NULL
 ORDER BY first_name, last_name
 
+
+
 --📌 Using the AND operator with other logical operators--
+
+
 
 SELECT
     *
