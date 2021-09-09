@@ -34,6 +34,7 @@ ORDER BY brand_id
 --📌 staff_id=manager_id
 --📌 Self Join de tablo kendisi ile birlestirilir..
 
+
 SELECT *
 FROM sales.staffs A, sales.staffs B
 WHERE A.manager_id=B.staff_id
