@@ -80,6 +80,7 @@ GROUP BY product_id
 HAVING  COUNT(product_id)>1
 
 
+
 --📌Selectte yazdigimiz tum sutunlar Groupbyda da olmali--
 
 --🔍 Write a query that returns category ids with a maximum list price above 4000 or a minimum list price below 500.
