@@ -11,6 +11,7 @@ FROM production.brands
 SELECT *
 FROM production.categories
 
+
 --📌Bir tablonun bir  satirinin diger tablonun tum satirlari ile yapilan sorgulamasi icin Cross Join kullanabiliriz.--
 --📌capraz sorgu!
 
@@ -18,6 +19,7 @@ SELECT *
 FROM production.brands
 CROSS JOIN production.categories
 ORDER BY brand_id
+
 
 
 -------------************-------------

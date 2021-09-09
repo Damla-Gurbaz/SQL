@@ -239,6 +239,8 @@ WHERE
 
 
 --🔍 More SQL Server inner join examples
+
+
 SELECT
     product_name,
     category_name,
@@ -329,4 +331,6 @@ GROUP BY
 ORDER BY
     city,
     state;
+
+
 
