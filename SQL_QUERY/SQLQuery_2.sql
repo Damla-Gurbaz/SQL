@@ -61,7 +61,9 @@ FROM sales.staffs
 --Having,aggregation sonucu olusan tabloya filtreleme yapiyor..
 
 
+
 --🔍Write a query that checks if any product id is repeated in more than one row in the products table.
+
 
 SELECT	product_id, COUNT (*) AS CNT_PRODUCT
 FROM	production.products
