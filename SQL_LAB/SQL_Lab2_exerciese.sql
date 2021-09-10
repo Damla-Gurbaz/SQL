@@ -1,11 +1,15 @@
 --Select the customers who have purchased both Children Bicycle and Comfort Bicycle in a single order. 
 --(expected columns: Customer id, first name, last name, order id)
 
+
+
 SELECT	E.Customer_id, first_name, last_name, D.order_id,category_name,
 		
 		
 
-		
+
+
+
 FROM	produc
 tion.categories A,
 		production.products B,
@@ -42,6 +46,8 @@ WHERE A.category_id = B.category_id AND
 	  C.order_id = D.order_id AND
 	  D.customer_id = E.customer_id
 AND   A.category_name ='Comfort Bicycles'
+
+
 
 
 
