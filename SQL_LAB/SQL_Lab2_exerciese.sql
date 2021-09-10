@@ -5,8 +5,6 @@
 
 SELECT	E.Customer_id, first_name, last_name, D.order_id,category_name,
 		
-		
-
 
 
 
