@@ -3,6 +3,7 @@ SELECT LEN(' DAMLA ')
 
 SELECT LEN('"WELCOME"')
 
+
 SELECT CHARINDEX('C', 'CHARACTER')  --C kacinci karakter,soldan baslar ilk buldugumuzun lokasyonunu getirir..
 SELECT CHARINDEX('C', 'CHARACTER', 2) --2.karakterden itibaren aramaya basla
 SELECT CHARINDEX('CT', 'CHARACTER')
