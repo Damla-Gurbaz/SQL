@@ -81,6 +81,7 @@ FROM sales.customers
 select nullif(first_name, 'Debra')
 FROM sales.customers
 
+
 select COUNT(nullif(first_name, 'Debra'))
 FROM sales.customers
 
