@@ -19,6 +19,7 @@ SELECT PATINDEX('%A____', 'CHARACTER') --Adan sonraki 4 karakteride getir.
 
 SELECT LEFT('CHARaCTER', 3)
 
+
 SELECT LEFT(' CHARaCTER', 3)--Bosluguda sayiyor
 
 SELECT RIGHT('CHARaCTER', 3)
