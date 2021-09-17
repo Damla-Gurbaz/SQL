@@ -9,6 +9,8 @@ GROUP BY A.brand_name, B.category_name
 ORDER BY 
         3 DESC
 
+		
+
 
 --Write a query that returns the store which has the most sales quantity in 2016.
 
