@@ -36,6 +36,7 @@ ORDER BY
 
 --alternatif cozum--👇🏻
 
+
 SELECT	TOP 1 C.store_id, C.store_name, SUM  (B.quantity) TOTAL_PRODUCT
 FROM	SALES.orders A, sales.order_items B, sales.stores C
 WHERE	A.order_id = B.order_id
