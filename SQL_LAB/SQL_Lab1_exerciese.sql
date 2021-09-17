@@ -1,6 +1,7 @@
   
 --Write a query that returns the average prices according to brands and categories.
 
+
 SELECT A.brand_name, B.category_name, AVG (C.list_price) AVG_PRICE
 FROM production.brands A, production.categories B, production.products C 
 WHERE A.brand_id=C.brand_id
