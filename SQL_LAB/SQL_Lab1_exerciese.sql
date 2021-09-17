@@ -47,6 +47,8 @@ ORDER BY
 		TOTAL_PRODUCT DESC    
 
 
+
+
 --Write a query that returns State where 'Trek Remedy 9.8 - 2017' proudct is not ordered.
 --STATE--> CUSTOMER
 --PRODUCT NAME --> PRODUCTS
